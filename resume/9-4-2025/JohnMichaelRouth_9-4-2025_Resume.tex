@@ -1,0 +1,107 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\pagestyle{empty}
+
+% --- Typography & spacing ---
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.7em, itemsep=2pt, topsep=2pt, parsep=0pt}
+
+% --- Section titles: bold, rule below, tight spacing ---
+\titleformat{\section}{\bfseries\large}{}{0pt}{}
+[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{4pt}
+
+\begin{document}
+
+% ====================== Header ======================
+\begin{center}
+    {\LARGE \textbf{Michael Routh}}\\
+    {
+    \href{tel:+15555555555}{555-555-5555} \textperiodcentered\space
+    \href{mailto:JohnMichaelRouth@gmail.com}{johnmichaelrouth@gmail.com} \textperiodcentered\space
+    \href{https://www.linkedin.com/in/johnmichaelrouth}{linkedin.com/in/johnmichaelrouth} \textperiodcentered\space
+    \href{https://github.com/johnmichaelrouth}{github.com/johnmichaelrouth}
+    }
+\end{center}
+
+
+% ====================== Education ======================
+\section*{Education}
+\textbf{The University of Texas at Austin} \hfill Austin, TX\\
+Bachelor of Science in Electrical and Computer Engineering \hfill Dec 2023
+
+% ====================== Experience ======================
+\section*{Experience}
+
+\textbf{Professional Software Engineer} \hfill Jul 2025 -- Present\\
+\textit{Cotality (formerly CoreLogic)} \hfill Austin, TX
+\begin{itemize}
+  \item Delivered an inspection reporting UI that met tight beta launch deadlines while handling deeply nested data.
+  \item Saved business over 100 hours by migrating proven branding strategy while transitioning to a new project. 
+  \item Kept mobile, web, and API in sync by creating system using Conflict-free Replicated Data Types.
+  \item Prevented duplicate email notifications by designing deduplication queue during CRDT push events.
+  \item Architected automated messaging feature with user configurable delays and triggers, improving customer experience.
+  \item Mentored intern through design, implementation, and release of the configurable automated messaging.
+\end{itemize}
+\textit{Technologies:} Angular, NgRx, Spring Boot, Flutter, Dart, Cypress, Jest, Velocity, Mixpanel, Jenkins
+
+\textbf{Associate Professional Software Engineer} \hfill Aug 2023 -- Jun 2025\\
+\textit{Cotality (formerly CoreLogic)} \hfill Austin, TX
+\begin{itemize}
+  \item Unified branding across OneHome, Matrix, and MLS Touch, impacting millions of real estate professionals.
+  \item Implemented web assembly color extraction from branding logos with 87\% of users accepted palette on first try.
+  \item Reduced bulk branding API call times by 95\% with Redis caching, cutting response time from minutes to seconds.
+  \item Improved testability and predictability by migrating SPA state management to NgRx with Cypress integration tests.
+  \item Created an admin web app that empowered product teams to resolve customer issues without engineering intervention.
+  \item Kept downstream services fresh through Kafka-driven cache invalidation while reducing direct service coupling.
+  \item Expanded market for OneHome by working cross team to ship referral links feature that enabled free trial.
+\end{itemize}
+\textit{Technologies:} Angular, NgRx, Spring Boot, Redis, Elasticsearch, Kafka, Cypress, Datadog RUM, Mixpanel
+
+\textbf{.NET Software Engineering Intern} \hfill Jun 2023 -- Aug 2023\\
+\textit{CoreLogic} \hfill Austin, TX
+\begin{itemize}
+  \item Refreshed legacy table view into an Inspection Status Notifications Web Application for user-friendly tracking.
+  \item Automated cross system notifications via RabbitMQ and an internal SQL message on database updates.
+  \item Managed home owner subscriber email and SMS notifications through an internal SQL letter queue.
+\end{itemize}
+\textit{Technologies:} .NET 6, C\#, Angular, EF Core, SQL, RabbitMQ
+
+% ====================== Projects ======================
+\section*{Projects}
+
+\textbf{League of Legends Build Analytics} \hfill Aug 2025 -- Present\\
+\textit{Rust, Next.js (SSR), GCP}
+\begin{itemize}
+  \item Ingests \textasciitilde100k matches per day to calculate win rates by item, lane, and champion for post-game insights.
+  \item Provides SEO-optimized slug links that allow players to validate builds and share results across social platforms.
+\end{itemize}
+
+\textbf{Core3DXL: Web based 3D Interactive Home Tours} \hfill Oct 2024\\
+\textit{Gaussian Splatting, Angular}
+\begin{itemize}
+  \item Interactive 3D property walk-throughs and an embedded viewer in the OneHome website.
+  \item Extracted crisp frames from user recorded house walkthrough to train Gaussian splats \& cleaned resulting point cloud.
+  \item Won 2024 Market Impact award at company hackathon for revenue implications of this feature.
+\end{itemize}
+
+\textbf{Community Reputation \& Economy Discord Bot} \hfill Sep 2024\\
+\textit{Node.js, MongoDB, GCP}
+\begin{itemize}
+  \item Supported \textasciitilde1k community members with daily rewards, jobs, and mini-games that increased server retention.
+  \item Added leaderboards and P2P transfers to boost competition and user activity across 400+ active users.
+\end{itemize}
+
+% ====================== Technical Skills ======================
+\section*{Technical Skills}
+\textbf{Languages:} TypeScript, Java, C\#, Go, Python, Rust, SQL, HTML, CSS \\
+\textbf{Frameworks \& Libraries:} Angular, NgRx, Cypress, Spring Boot, .NET 6, Node.js, Next.js \\
+\textbf{Cloud \& Infra:} GCP (GCE), Kafka, Redis, PostgreSQL, Jenkins, CI/CD \\
+\textbf{Analytics/Observability:} Datadog RUM, Mixpanel
+
+\end{document}
